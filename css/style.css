@@ -1,0 +1,38 @@
+body {
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#save-button,
+#reset-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #0095ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#save-button:hover,
+#reset-button:hover {
+    background-color: #006db3;
+}
+
+#status {
+    margin: 10px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+}

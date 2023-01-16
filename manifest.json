@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "EditDOMX",
+  "description": "EditDOMX is a chrome extension that allows users to edit the DOM of a webpage by specifying a class name and new content. It uses chrome storage to save the class name and new content, and then on load, it checks if the class name exists on the current page and if it does, it replaces the content of all elements with that class name with the new content specified by the user.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon":"images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ]
+}
